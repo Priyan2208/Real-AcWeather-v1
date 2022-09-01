@@ -125,9 +125,6 @@ const App = () => {
     case "Rain":
       icon = <IoMdRainy className="text-[#09befb]" />;
       break;
-    case "Clear":
-      icon = <IoMdSunny className="text-[#fdda29]" />;
-      break;
     case "Drizzle":
       icon = <BsCloudDrizzleFill className="text-[#31cafb]" />;
       break;
@@ -137,6 +134,8 @@ const App = () => {
     case "Thunderstorm":
       icon = <IoMdThunderstorm />;
       break;
+    default:
+      icon = <IoMdSunny className="text-[#fdda29]" />;
   }
 
   // date object
